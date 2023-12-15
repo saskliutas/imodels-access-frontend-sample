@@ -1,0 +1,412 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@itwin/imodels-access-frontend':
+    specifier: 4.1.2
+    version: 4.1.2(@itwin/core-bentley@4.3.1)(@itwin/core-common@4.3.1)(@itwin/core-frontend@4.3.1)
+  typescript:
+    specifier: ^5.3.3
+    version: 5.3.3
+
+packages:
+
+  /@babel/runtime@7.23.6:
+    resolution: {integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
+
+  /@itwin/appui-abstract@4.3.1(@itwin/core-bentley@4.3.1):
+    resolution: {integrity: sha512-M0uao3hz0XjNxiYYu8X3Md04HHfsPgZPLiSL6TSHw0Tk2R38vnhhdpPpVYfxomwulHrQHWmiyuI/I4HpsA5vag==}
+    peerDependencies:
+      '@itwin/core-bentley': ^4.3.1
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+    dev: false
+
+  /@itwin/cloud-agnostic-core@2.2.1(inversify@6.0.2)(reflect-metadata@0.1.14):
+    resolution: {integrity: sha512-Macw2d7d8VTa7B/xy/YWAbYKxiCu8XXtAT1s9yqcV9tQw5Z/6E97kimz/IWjBi6P+4rHLtEXZfF2wuR8mmr8Bw==}
+    engines: {node: '>=12.20 <19.0.0'}
+    peerDependencies:
+      inversify: ^6.0.1
+      reflect-metadata: ^0.1.13
+    dependencies:
+      inversify: 6.0.2
+      reflect-metadata: 0.1.14
+    dev: false
+
+  /@itwin/core-bentley@4.3.1:
+    resolution: {integrity: sha512-BNIot18fp8Zf+UAloZ1WLC/Y1JLnH5C9QlK8BG9MQmz7kw7SZwTMg5fplCyKw6qj3rEJOobb+kroVFmMxR9dPw==}
+    dev: false
+
+  /@itwin/core-common@4.3.1(@itwin/core-bentley@4.3.1)(@itwin/core-geometry@4.3.1):
+    resolution: {integrity: sha512-4Y27Eq9M/cvn5V/nGh5jiMJxpDlcwhd2xh2GHrokgfX9bX9aKHs+NQhKH5FKbIC2QyxbTJBNN5MGtZYBFftDNw==}
+    peerDependencies:
+      '@itwin/core-bentley': ^4.3.1
+      '@itwin/core-geometry': ^4.3.1
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+      '@itwin/core-geometry': 4.3.1
+      flatbuffers: 1.12.0
+      js-base64: 3.7.5
+    dev: false
+
+  /@itwin/core-frontend@4.3.1(@itwin/appui-abstract@4.3.1)(@itwin/core-bentley@4.3.1)(@itwin/core-common@4.3.1)(@itwin/core-geometry@4.3.1)(@itwin/core-orbitgt@4.3.1)(@itwin/core-quantity@4.3.1)(inversify@6.0.2)(reflect-metadata@0.1.14):
+    resolution: {integrity: sha512-SiNkMsc6Jeb3kZJ5atEw3YO0CujydyURiXeRx+CRNLxjSLoXHpHJ0OBa930IMr8dF2ii2aesBZn7f/56BK1HEg==}
+    peerDependencies:
+      '@itwin/appui-abstract': ^4.3.1
+      '@itwin/core-bentley': ^4.3.1
+      '@itwin/core-common': ^4.3.1
+      '@itwin/core-geometry': ^4.3.1
+      '@itwin/core-orbitgt': ^4.3.1
+      '@itwin/core-quantity': ^4.3.1
+    dependencies:
+      '@itwin/appui-abstract': 4.3.1(@itwin/core-bentley@4.3.1)
+      '@itwin/cloud-agnostic-core': 2.2.1(inversify@6.0.2)(reflect-metadata@0.1.14)
+      '@itwin/core-bentley': 4.3.1
+      '@itwin/core-common': 4.3.1(@itwin/core-bentley@4.3.1)(@itwin/core-geometry@4.3.1)
+      '@itwin/core-geometry': 4.3.1
+      '@itwin/core-i18n': 4.3.1(@itwin/core-bentley@4.3.1)
+      '@itwin/core-orbitgt': 4.3.1
+      '@itwin/core-quantity': 4.3.1(@itwin/core-bentley@4.3.1)
+      '@itwin/core-telemetry': 4.3.1(@itwin/core-geometry@4.3.1)
+      '@itwin/object-storage-core': 2.2.1(inversify@6.0.2)(reflect-metadata@0.1.14)
+      '@itwin/webgl-compatibility': 4.3.1
+      '@loaders.gl/core': 3.4.14
+      '@loaders.gl/draco': 3.4.14
+      fuse.js: 3.6.1
+      wms-capabilities: 0.4.0
+    transitivePeerDependencies:
+      - debug
+      - encoding
+      - inversify
+      - reflect-metadata
+    dev: false
+
+  /@itwin/core-geometry@4.3.1:
+    resolution: {integrity: sha512-suTEtD0NJLqzS/mqH/FPo663uANX8+70vJmwzDlikd/6L7S2fqvf7txopdQqQtxs/0Q6GU1gW+4NTzXenynWnQ==}
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+      flatbuffers: 1.12.0
+    dev: false
+
+  /@itwin/core-i18n@4.3.1(@itwin/core-bentley@4.3.1):
+    resolution: {integrity: sha512-4it8c548Nh+GPnnrGJivn7unGG76eFIKtU6Om2Uzcc91ktiYipOvUE0qjeo/bYgIiT35IooYBuEI4+4jMNZPZA==}
+    peerDependencies:
+      '@itwin/core-bentley': ^4.3.1
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+      i18next: 21.10.0
+      i18next-browser-languagedetector: 6.1.8
+      i18next-http-backend: 1.4.5
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@itwin/core-orbitgt@4.3.1:
+    resolution: {integrity: sha512-EadNynDL4207JEKj/UWJhqF7xqi/RQceistubLwGhv6vNuXxaQPn+TV86FxLfgETwMQcsBfuemVTdTZV4Jh6ZQ==}
+    dev: false
+
+  /@itwin/core-quantity@4.3.1(@itwin/core-bentley@4.3.1):
+    resolution: {integrity: sha512-dgReL/imnjLINlZzhoNhNI7PbCzUZeyaWX++Lc0/pw8CM6LUr/XiTYRgrAWWuy0uQW+hHooVKLy/dPYGZWMuJA==}
+    peerDependencies:
+      '@itwin/core-bentley': ^4.3.1
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+    dev: false
+
+  /@itwin/core-telemetry@4.3.1(@itwin/core-geometry@4.3.1):
+    resolution: {integrity: sha512-invvmtBO+UNGaEq8TJW+hNOmIeU2bPRQ3m93L2zwd+oCb9QZNZqZSz5+nrAQh+m7KW76lNwqHKccSrDUlM0/SA==}
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+      '@itwin/core-common': 4.3.1(@itwin/core-bentley@4.3.1)(@itwin/core-geometry@4.3.1)
+    transitivePeerDependencies:
+      - '@itwin/core-geometry'
+    dev: false
+
+  /@itwin/imodels-access-common@4.1.2(@itwin/core-bentley@4.3.1)(@itwin/core-common@4.3.1):
+    resolution: {integrity: sha512-15VM598kebTLnoUGuc8q7izZDNWY1DSFZ9guXGYuEXZpgyRw5Itmlf9EJsGA4WKhvr2y/qQ56MRRIf3I1XEv5A==}
+    peerDependencies:
+      '@itwin/core-bentley': ^4.0.0
+      '@itwin/core-common': ^4.0.0
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+      '@itwin/core-common': 4.3.1(@itwin/core-bentley@4.3.1)(@itwin/core-geometry@4.3.1)
+      '@itwin/imodels-client-management': 4.2.1
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@itwin/imodels-access-frontend@4.1.2(@itwin/core-bentley@4.3.1)(@itwin/core-common@4.3.1)(@itwin/core-frontend@4.3.1):
+    resolution: {integrity: sha512-XSkqAgSjsFChvHC+3+3i1tjtvgunIr1gKY9GKBsbqibOAcdUTNJWvpK4ZC9/ut+Jyu7buiVLsSwv4PtmusDTyA==}
+    peerDependencies:
+      '@itwin/core-bentley': ^4.0.0
+      '@itwin/core-common': ^4.0.0
+      '@itwin/core-frontend': ^4.0.0
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+      '@itwin/core-common': 4.3.1(@itwin/core-bentley@4.3.1)(@itwin/core-geometry@4.3.1)
+      '@itwin/core-frontend': 4.3.1(@itwin/appui-abstract@4.3.1)(@itwin/core-bentley@4.3.1)(@itwin/core-common@4.3.1)(@itwin/core-geometry@4.3.1)(@itwin/core-orbitgt@4.3.1)(@itwin/core-quantity@4.3.1)(inversify@6.0.2)(reflect-metadata@0.1.14)
+      '@itwin/imodels-access-common': 4.1.2(@itwin/core-bentley@4.3.1)(@itwin/core-common@4.3.1)
+      '@itwin/imodels-client-management': 4.2.1
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@itwin/imodels-client-management@4.2.1:
+    resolution: {integrity: sha512-1rDDb2hl5eLmL/32fgvur45UAkOH9Yy3zrWyqEZzcFKaz+VlIyiG5dZH5QSYyBkSvBB1yRf+V1JehptEJyEWTA==}
+    dependencies:
+      axios: 1.6.2
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@itwin/object-storage-core@2.2.1(inversify@6.0.2)(reflect-metadata@0.1.14):
+    resolution: {integrity: sha512-DHyjg3Z8/SExS2LV7gOgiQqjTebH8pPihGszP2b9nly9IXo+diK8U3xwszb2qOBX6KZzfBAkNfnbY/P7kHmYhw==}
+    engines: {node: '>=12.20 <19.0.0'}
+    peerDependencies:
+      inversify: ^6.0.1
+      reflect-metadata: ^0.1.13
+    dependencies:
+      '@itwin/cloud-agnostic-core': 2.2.1(inversify@6.0.2)(reflect-metadata@0.1.14)
+      axios: 1.6.2
+      inversify: 6.0.2
+      reflect-metadata: 0.1.14
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@itwin/webgl-compatibility@4.3.1:
+    resolution: {integrity: sha512-NeTvSTTRF+xxIXDPCHxGhBVZg+tX6K0FvbSSUqGXE9qsfz+FyaHOixNLYsAMK8/W1xxLHWCWvHndDgi9ripzLg==}
+    dependencies:
+      '@itwin/core-bentley': 4.3.1
+    dev: false
+
+  /@loaders.gl/core@3.4.14:
+    resolution: {integrity: sha512-5PFcjv7xC8AYL17juDMrvo8n0Fcwg9s8F4BaM2YCNUsb9RCI2SmLuIFJMcx1GgHO5vL0WiTIKO+JT4n1FuNR6w==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+      '@loaders.gl/loader-utils': 3.4.14
+      '@loaders.gl/worker-utils': 3.4.14
+      '@probe.gl/log': 4.0.4
+    dev: false
+
+  /@loaders.gl/draco@3.4.14:
+    resolution: {integrity: sha512-HwNFFt+dKZqFtzI0uVGvRkudFEZXxybJ+ZRsNkBbzAWoMM5L1TpuLs6DPsqPQUIT9HXNHzov18cZI0gK5bTJpg==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+      '@loaders.gl/loader-utils': 3.4.14
+      '@loaders.gl/schema': 3.4.14
+      '@loaders.gl/worker-utils': 3.4.14
+      draco3d: 1.5.5
+    dev: false
+
+  /@loaders.gl/loader-utils@3.4.14:
+    resolution: {integrity: sha512-HCTY2/F83RLbZWcTvWLVJ1vke3dl6Bye20HU1AqkA37J2vzHwOZ8kj6eee8eeSkIkf7VIFwjyhVJxe0flQE/Bw==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+      '@loaders.gl/worker-utils': 3.4.14
+      '@probe.gl/stats': 4.0.4
+    dev: false
+
+  /@loaders.gl/schema@3.4.14:
+    resolution: {integrity: sha512-r6BEDfUvbvzgUnh/MtkR5RzrkIwo1x1jtPFRTSJVsIZO7arXXlu3blffuv5ppEkKpNZ1Xzd9WtHp/JIkuctsmw==}
+    dependencies:
+      '@types/geojson': 7946.0.13
+    dev: false
+
+  /@loaders.gl/worker-utils@3.4.14:
+    resolution: {integrity: sha512-PUSwxoAYbskisXd0KfYEQ902b0igBA2UAWdP6PzPvY+tJmobfh74dTNwrrBQ1rGXQxxmGx6zc6/ksX6mlIzIrg==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+    dev: false
+
+  /@probe.gl/env@4.0.4:
+    resolution: {integrity: sha512-sYNGqesDfWD6dFP5oNZtTeFA4Z6ak5T4a8BNPdNhoqy7PK9w70JHrb6mv+RKWqKXq33KiwCDWL7fYxx2HuEH2w==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+    dev: false
+
+  /@probe.gl/log@4.0.4:
+    resolution: {integrity: sha512-WpmXl6njlBMwrm8HBh/b4kSp/xnY1VVmeT4PWUKF+RkVbFuKQbsU11dA1IxoMd7gSY+5DGIwxGfAv1H5OMzA4A==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+      '@probe.gl/env': 4.0.4
+    dev: false
+
+  /@probe.gl/stats@4.0.4:
+    resolution: {integrity: sha512-SDuSY/D4yDL6LQDa69l/GCcnZLRiGYdyvYkxWb0CgnzTPdPrcdrzGkzkvpC3zsA4fEFw2smlDje370QGHwlisg==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+    dev: false
+
+  /@types/geojson@7946.0.13:
+    resolution: {integrity: sha512-bmrNrgKMOhM3WsafmbGmC+6dsF2Z308vLFsQ3a/bT8X8Sv5clVYpPars/UPq+sAaJP+5OoLAYgwbkS5QEJdLUQ==}
+    dev: false
+
+  /asynckit@0.4.0:
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+    dev: false
+
+  /axios@1.6.2:
+    resolution: {integrity: sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==}
+    dependencies:
+      follow-redirects: 1.15.3
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /combined-stream@1.0.8:
+    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
+    engines: {node: '>= 0.8'}
+    dependencies:
+      delayed-stream: 1.0.0
+    dev: false
+
+  /cross-fetch@3.1.5:
+    resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
+    dependencies:
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /delayed-stream@1.0.0:
+    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
+    engines: {node: '>=0.4.0'}
+    dev: false
+
+  /draco3d@1.5.5:
+    resolution: {integrity: sha512-JVuNV0EJzD3LBYhGyIXJLeBID/EVtmFO1ZNhAYflTgiMiAJlbhXQmRRda/azjc8MRVMHh0gqGhiqHUo5dIXM8Q==}
+    dev: false
+
+  /flatbuffers@1.12.0:
+    resolution: {integrity: sha512-c7CZADjRcl6j0PlvFy0ZqXQ67qSEZfrVPynmnL+2zPc+NtMvrF8Y0QceMo7QqnSPc7+uWjUIAbvCQ5WIKlMVdQ==}
+    dev: false
+
+  /follow-redirects@1.15.3:
+    resolution: {integrity: sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
+
+  /form-data@4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: false
+
+  /fuse.js@3.6.1:
+    resolution: {integrity: sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /i18next-browser-languagedetector@6.1.8:
+    resolution: {integrity: sha512-Svm+MduCElO0Meqpj1kJAriTC6OhI41VhlT/A0UPjGoPZBhAHIaGE5EfsHlTpgdH09UVX7rcc72pSDDBeKSQQA==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+    dev: false
+
+  /i18next-http-backend@1.4.5:
+    resolution: {integrity: sha512-tLuHWuLWl6CmS07o+UB6EcQCaUjrZ1yhdseIN7sfq0u7phsMePJ8pqlGhIAdRDPF/q7ooyo5MID5DRFBCH+x5w==}
+    dependencies:
+      cross-fetch: 3.1.5
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /i18next@21.10.0:
+    resolution: {integrity: sha512-YeuIBmFsGjUfO3qBmMOc0rQaun4mIpGKET5WDwvu8lU7gvwpcariZLNtL0Fzj+zazcHUrlXHiptcFhBMFaxzfg==}
+    dependencies:
+      '@babel/runtime': 7.23.6
+    dev: false
+
+  /inversify@6.0.2:
+    resolution: {integrity: sha512-i9m8j/7YIv4mDuYXUAcrpKPSaju/CIly9AHK5jvCBeoiM/2KEsuCQTTP+rzSWWpLYWRukdXFSl6ZTk2/uumbiA==}
+    dev: false
+
+  /js-base64@3.7.5:
+    resolution: {integrity: sha512-3MEt5DTINKqfScXKfJFrRbxkrnk2AxPWGBL/ycjz4dK8iqiSJ06UxD8jh8xuh6p10TX4t2+7FsBYVxxQbMg+qA==}
+    dev: false
+
+  /mime-db@1.52.0:
+    resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
+    engines: {node: '>= 0.6'}
+    dev: false
+
+  /mime-types@2.1.35:
+    resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
+    engines: {node: '>= 0.6'}
+    dependencies:
+      mime-db: 1.52.0
+    dev: false
+
+  /minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: false
+
+  /node-fetch@2.6.7:
+    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: false
+
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
+
+  /reflect-metadata@0.1.14:
+    resolution: {integrity: sha512-ZhYeb6nRaXCfhnndflDK8qI6ZQ/YcWZCISRAWICW9XYqMUwjZM9Z0DveWX/ABN01oxSHwVxKQmxeYZSsm0jh5A==}
+    dev: false
+
+  /regenerator-runtime@0.14.0:
+    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
+    dev: false
+
+  /tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+    dev: false
+
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
+
+  /webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: false
+
+  /whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    dev: false
+
+  /wms-capabilities@0.4.0:
+    resolution: {integrity: sha512-dGe1SQ4GySIfsmGF+yk07QRsed0DgJJkPpimbmehE9nGXLqIGhbpi6pNk71YENqupLPSqcABDrKZ1UqepOhCyA==}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+    dev: false
